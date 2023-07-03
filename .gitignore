@@ -4,3 +4,4 @@
 .Ruserdata
 .httr-oauth
 00_auth.R
+.DS_Store
