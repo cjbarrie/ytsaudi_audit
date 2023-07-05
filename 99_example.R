@@ -51,7 +51,7 @@ df_long$initial_bias_category <- cut(df_long$initial_bias, breaks = c(-Inf, -1, 
 ggplot(df_long, aes(x = time, y = bias_score, color = initial_bias_category)) +
   geom_jitter(alpha = 0.6, width = 0.2, height = 0.2) +
   labs(title = "Bias Scores Over Time",
-       x = "Time",
+       x = "Iteration",
        y = "Bias Score",
        color = "Initial Bias\nCategory") +
   theme_minimal() +
