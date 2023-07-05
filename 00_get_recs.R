@@ -50,7 +50,8 @@ for (i in seq_along(sampled_ids)) {
 
 saveRDS(all_rel_vids, "data/output/mbsrelatedvids.rds")
 
-# relvids_numbered <- all_rel_vids %>%
-#   group_by(channelTitle) %>%
-#   count() %>%
-#   arrange(-n)
+# get top channels
+relvids_numbered <- all_rel_vids %>%
+  group_by(channelTitle) %>%
+  count() %>%
+  arrange(-n)
